@@ -1,66 +1,159 @@
 *{
     margin:0;
     padding:0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: sans-serif;
 }
-
 header{
-    background: #BCD8C1;
-}
-
-.nav-links{
-    display: inline;
-    ;
+    height: 120px;
+    display: flex;
+    padding: 10px;
+    background: #7AA095;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 300px;
 }
 header h1{
-    text-align: left;
+    min-width: 200px;
 }
-
-header h3{
-    display: inline;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-body{
-    
-}
-
-.header-img{
-    background:#D6DBB2 ;
-    padding-top: 2px;
-}
-
-.tree-img{
+.nav-bar{
     width:100%;
-    height:150px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 5%;
+}
+.nav-bar a{
+    font-size: larger;
+
+}
+.nav-links{
+    min-width: 200px;
+    /* background-color: blue; */
+    padding: 8px;
+    border-bottom: solid #618B4A;
+}
+.header-img img{
+    background-color: bisque;
+    min-width: 100%;
+    height: 300px;
     object-fit: cover;
 }
-.about-me-container,
-.work-container{
-    /* display: block;
-    width: 23%;
-    height: 23%;
+body{
+    background: #AFBC88;
+ }
+ .about-me,
+ .work,
+ .contact-me{
+    display: flex;
+    /* padding-right: 500px; */
+  }
+  .contact-me{
+   padding-bottom: 20px;
+  }
+ .about-me aside{
+    /* background: #7AA095; */
+    width: 63%;
+    text-indent: 35px;
+    font-size: medium;
     padding: 10px;
-    text-align: center; */
+    border-bottom: 2px solid #7AA095;
+    flex-direction: column;
+    text-align: end;
+    padding: 1%;
+    margin-left: 200px;
+    
+  }
+ .about-me-title,
+ .work-title,
+ .contact-me-title{
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:center;
-    padding: 3%;
-    min-width: 40%;
-}
-.about-me-title{
     font-size: 45px;
-    display: block;
-    width: 30%;
-    height: 100px;
-    border-right: solid #E3D985 2px;
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background: blue; */
+    width: 25%;
+    padding: 8px;
+    border-right: 2px solid #40531B;
     text-align: justify;
-    padding: 0;
+    padding-top: 30px;
+    padding-left: 75px;
+ }
+ .about-me-title{
+    height: 260px;
+ }
+ .work-title{
+   padding-top: 200px;
+   justify-content: right;
+    height: 1600px;
+ }
+.contact-me-title{
+    height: 180px;
+    
 }
-.about-me{
+.work{
+   /* background: gray; */
+   margin: 0;
+   padding: 0;
+   height: 1800px;
+}
+.card-container{
+   padding-left: 300px;
+   /* background: gray; */
+   margin: 20px;
+   width: 60%;
+}
+.row{
+   min-width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   height: 580px;
+}
+.card-item-1{
+   background: #40531B;
+   position: relative;
+   flex: 1;
+   width:68%;
+   height: 600px;
+   margin: 10px;
+   border-radius: 5px;
+}
+.card-item-2{  
+   flex-direction: row; 
+   background: #40531B;
+   align-items: center;
+   flex: 2;
+   width:45%;
+   min-height: 300px;
+   margin: 10px;
+   border-radius: 5px;
+}
+.contact-container{
+   width:60%;
     display: flex;
-    width: 70%; 
-    margin-left: 10px;  
+    align-items: center;
+    justify-content: right;
+    padding-right: 5%;
+}
+.contact-links{
+   font-size: larger;
+   min-width: 200px;
+   padding: 8px;
+   border-bottom: solid #618B4A;
+}
+.card-item-1:hover{
+   background: #618B4A;
+}
+.card-item-2:hover{
+   background: #618B4A;
+}
+footer{
+   height: 100px;
+   background: #7AA095;
+   width: 100%;
 }
